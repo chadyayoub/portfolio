@@ -1,23 +1,29 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import routeNames from "../../../routesNames";
 import "./navBar.css";
 
 const NavBar = () => (
-  <Fragment>
-    <div className="navBar">
-      <h1>Jhon doe</h1>
-      <ul className="navBarLinksContainer">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+  <div id="page">
+    <div id="navBar">
+      <div id="navBarContainer">
+        <h1>Nurato</h1>
+        <ul id="navBarLinksContainer">
+          <li>
+            <Link to={routeNames.home}>Home</Link>
+          </li>
+          <li>
+            <Link to={routeNames.contact}>Contact</Link>
+          </li>
+          <li>
+            <Link to={routeNames.myWork}>My projects</Link>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div className="pageContent">
+    <div id="pageContent">
       <Outlet />
     </div>
-  </Fragment>
+  </div>
 );
 export default NavBar;

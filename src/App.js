@@ -1,16 +1,18 @@
-import { Routes, Route, createRoutesFromElements } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landingPage/landingPage";
 import NavBar from "./components/organisms/navBar/navBar";
-// import routeNames from "./routesNames";
-import About from "./pages/about/about";
+import routeNames from "./routesNames";
+import Contact from "./pages/contact/contact";
+import MyWork from "./pages/myWork/myWork";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<NavBar />}>
+        <Route path={routeNames.home} element={<NavBar />}>
           <Route index element={<LandingPage />} />
-          <Route path="about" element={<About />} />
+          <Route path={routeNames.contact} element={<Contact />} />
+          <Route path={routeNames.myWork} element={<MyWork />} />
         </Route>
       </Routes>
     </>

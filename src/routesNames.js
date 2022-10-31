@@ -1,5 +1,6 @@
 const routeNames = {
   home: "/",
-  about: "/about",
+  contact: "/contact",
   myWork: "/myWork",
 };
+export default routeNames;

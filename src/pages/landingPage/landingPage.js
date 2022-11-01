@@ -13,7 +13,9 @@ const LandingPage = ({ style }) => (
         native. I also do web apps using plain html/css/js or using react, and
         also worked on some game projects for fun using unity engine.
       </p>
-      <p id="button">My work</p>
+      <p id="button">
+        <span>My work </span>
+      </p>
     </div>
     <div id="imageContainer">
       <img id="image" src={require("../../assets/naruto.png")} alt="me" />

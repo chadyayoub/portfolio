@@ -1,0 +1,94 @@
+#contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactform {
+  width: 800px;
+  height: 800px;
+  background-color: #0002;
+  border-radius: 2%;
+}
+
+#leaveAMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+#formContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  resize: none;
+  width: 400px;
+  height: 200px;
+  background-color: #0004;
+  border-style: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+#message::placeholder {
+  color: #aaa;
+}
+#message:focus {
+  outline: none;
+  caret-color: #fff;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.fieldText {
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.inputField {
+  width: 400px;
+  height: 50px;
+  background-color: #0004;
+  border-style: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  color: #fff;
+}
+.inputField:focus {
+  outline: none;
+  caret-color: #fff;
+}
+.inputField::placeholder {
+  color: #aaa;
+}
+
+#submit {
+  width: 200px;
+  align-self: center;
+  height: 50px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #fff;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+#buttonContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

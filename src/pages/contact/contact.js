@@ -31,14 +31,6 @@ const Contact = () => {
         <div id="formContainer">
           <form ref={form} onSubmit={sendEmail}>
             <div className="inputContainer">
-              <label className="fieldText">Mail</label>
-              <input
-                className="inputField"
-                placeholder="Mail"
-                name="from_mail"
-              />
-            </div>
-            <div className="inputContainer">
               <label className="fieldText">Name</label>
               <input
                 className="inputField"

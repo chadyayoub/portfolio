@@ -49,12 +49,47 @@
   height: 100%;
   background: rgb(2, 0, 36);
   background: linear-gradient(
-    70deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 20, 121, 1) 35%,
-    rgba(135, 52, 255, 1) 100%
+    60deg,
+    rgb(58, 8, 42) 0%,
+    rgb(18, 13, 59) 35%,
+    rgb(18, 13, 59) 65%,
+    rgb(81, 10, 59) 100%
   );
 }
 #pageContent {
   margin-top: 100px;
+}
+
+@media only screen and (min-width: 1301px) {
+  #responsive {
+    display: none;
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #responsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  #navBar {
+    display: none;
+  }
+  #pageContent {
+    display: none;
+  }
+}
+
+#responsive {
+  font-size: 50px;
+  width: 0%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
 }

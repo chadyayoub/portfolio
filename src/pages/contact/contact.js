@@ -1,19 +1,21 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+require("dotenv").config();
 
 const Contact = () => {
   console.log("sending");
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(process.env);
     console.log(form.current);
     emailjs
       .sendForm(
-        "service_lm230to",
-        "template_aok10o9",
+        process.env.EMAIL_JS_SERVICE_ID,
+        process.env.EMAIL_JS_TEMPLATE_ID,
         form.current,
-        "6pkqKXDtshJ9b2vZJ"
+        process.env.EMAIL_JS_API_KEY
       )
       .then(
         (result) => {

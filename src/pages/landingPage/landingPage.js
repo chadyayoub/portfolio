@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./landingPage.css";
 
 const LandingPage = ({ style }) => (
   <div id="landingContainer">
-    <div id="homeLeftContent">
+    <motion.div
+      initial={{ opacity: 0, x: -500 }}
+      transition={{
+        duration: 0.7,
+      }}
+      animate={{ opacity: 1, x: 0 }}
+      id="homeLeftContent"
+    >
       <p className="leftContentTitle">Ohayo sekai good morning world!</p>
       <p className="leftContentBody">
         Thank you for visiting my website! I am a developer based in lebanon,
@@ -12,13 +20,13 @@ const LandingPage = ({ style }) => (
         native. I also do web apps using plain html/css/js or using react, and
         also worked on some game projects for fun using unity engine.
       </p>
-      <p id="button">
-        <span>My work </span>
-      </p>
-    </div>
-    <div id="imageContainer">
+      <div id="button">
+        <span>My work</span>
+      </div>
+    </motion.div>
+    <motion.div id="imageContainer">
       <img id="image" src={require("../../assets/naruto.png")} alt="me" />
-    </div>
+    </motion.div>
   </div>
 );
 

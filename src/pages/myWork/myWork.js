@@ -1,9 +1,10 @@
 import React from "react";
+import ScrollMagic from "../../components/organisms/scrollMagic/scrollMagic";
 import "./myWork.css";
 
 const MyWork = () => (
   <div>
-    <p>This is the my work page</p>
+    <ScrollMagic />
   </div>
 );
 export default MyWork;

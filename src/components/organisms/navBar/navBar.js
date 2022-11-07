@@ -11,6 +11,7 @@ const NavBar = () => {
   return (
     <>
       <div id="page">
+        <div id="background" />
         <div id="responsive">The website is responsive stop checking</div>
         <Particles />
         <motion.div

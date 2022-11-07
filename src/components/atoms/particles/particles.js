@@ -22,7 +22,7 @@ const AppParticles = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: 0,
+          zIndex: -1,
         },
         interactivity: {
           detect_on: "window",

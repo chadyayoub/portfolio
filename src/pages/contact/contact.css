@@ -96,15 +96,19 @@ form {
   border-color: rgb(137, 26, 102);
   cursor: pointer;
   color: rgb(137, 26, 102);
+  width: 250px;
+  height: 60px;
 }
 
 #buttonContainer:hover i::before {
-  left: 20%;
-  transform: skewX(50deg);
+  left: 0%;
+  width: 10%;
+  transform: skewX(70deg);
 }
 #buttonContainer:hover i::after {
-  left: 80%;
-  transform: skewX(50deg);
+  right: 0%;
+  width: 10%;
+  transform: skewX(70deg);
 }
 
 #buttonContainer {
@@ -119,24 +123,24 @@ form {
   content: "";
   background-color: #100b33;
   position: absolute;
-  width: 10px;
+  width: 5%;
   height: 4px;
   top: 0;
   left: 80%;
   z-index: 100;
-  transform: skewX(-50deg);
+  transform: skewX(-30deg);
   transition: 0.4s;
 }
 #buttonContainer i::after {
   content: "";
   background-color: #100b33;
   position: absolute;
-  width: 10px;
+  width: 5%;
   height: 4px;
   bottom: 0;
-  left: 20%;
+  right: 80%;
   z-index: 100;
-  transform: skewX(-50deg);
+  transform: skewX(-30deg);
   transition: 0.4s;
 }
 #buttonContainer:hover {

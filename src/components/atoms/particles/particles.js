@@ -53,7 +53,7 @@ const AppParticles = () => {
         fps_limit: 240,
         particles: {
           number: {
-            value: 200,
+            value: 100,
           },
           opacity: {
             value: 0.5,

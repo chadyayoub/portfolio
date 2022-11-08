@@ -81,7 +81,7 @@ form {
 #submit {
   width: 200px;
   align-self: center;
-  height: 50px;
+  height: 70px;
   border-radius: 25px;
   border-style: solid;
   font-size: 2em;
@@ -97,7 +97,7 @@ form {
   cursor: pointer;
   color: rgb(137, 26, 102);
   width: 250px;
-  height: 60px;
+  height: 80px;
 }
 
 #buttonContainer:hover i::before {

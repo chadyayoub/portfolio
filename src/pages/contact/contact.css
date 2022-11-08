@@ -24,6 +24,11 @@
   display: flex;
   flex-direction: column;
 }
+form {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
 
 #message {
   resize: none;
@@ -78,17 +83,62 @@
   align-self: center;
   height: 50px;
   border-radius: 25px;
-  border-style: none;
-  background-color: #fff;
+  border-style: solid;
+  font-size: 2em;
+  font-weight: 100;
+  color: #fff;
+  border-color: #fff;
+  border-width: 4px;
+  transition: 0.3s;
+  background-color: transparent;
 }
-#submit:hover {
+#buttonContainer:hover #submit {
+  border-color: rgb(137, 26, 102);
   cursor: pointer;
-  background-color: #eee;
+  color: rgb(137, 26, 102);
+}
+
+#buttonContainer:hover i::before {
+  left: 20%;
+  transform: skewX(50deg);
+}
+#buttonContainer:hover i::after {
+  left: 80%;
+  transform: skewX(50deg);
 }
 
 #buttonContainer {
-  width: 400px;
+  position: relative;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#buttonContainer i::before {
+  content: "";
+  background-color: #100b33;
+  position: absolute;
+  width: 10px;
+  height: 4px;
+  top: 0;
+  left: 80%;
+  z-index: 100;
+  transform: skewX(-50deg);
+  transition: 0.4s;
+}
+#buttonContainer i::after {
+  content: "";
+  background-color: #100b33;
+  position: absolute;
+  width: 10px;
+  height: 4px;
+  bottom: 0;
+  left: 20%;
+  z-index: 100;
+  transform: skewX(-50deg);
+  transition: 0.4s;
+}
+#buttonContainer:hover {
+  cursor: pointer;
 }

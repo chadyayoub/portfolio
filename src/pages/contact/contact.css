@@ -146,3 +146,11 @@ form {
 #buttonContainer:hover {
   cursor: pointer;
 }
+
+.inputError {
+  color: rgb(160, 32, 32);
+  max-width: 400px;
+  margin-left: 10px;
+  font-style: italic;
+  font-weight: 300;
+}

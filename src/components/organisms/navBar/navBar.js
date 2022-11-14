@@ -12,7 +12,7 @@ const NavBar = () => {
     <>
       <div id="page">
         <div id="background" />
-        <div id="responsive">The website is responsive stop checking</div>
+        <div id="responsive">Eh l website responsive mr george</div>
         <Particles />
         <motion.div
           id="navBar"

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./landingPage.css";
 
-const LandingPage = ({ style }) => (
+const LandingPage = () => (
   <div id="landingContainer">
     <motion.div
       initial={{ opacity: 0, x: -500 }}

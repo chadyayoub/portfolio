@@ -16,6 +16,7 @@ const AppParticles = () => {
   }, []);
   return (
     <Particles
+      className="hide-mobile"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
